@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'inicio_hotel' %}">
+            <i class="bi bi-building"></i> Sistema de Administración Hotel
+        </a>
+        
+        <div class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    <i class="bi bi-people-fill"></i> Empleados
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="{% url 'agregar_empleados' %}">Agregar Empleados</a></li>
+                    <li><a class="dropdown-item" href="{% url 'ver_empleados' %}">Ver Empleados</a></li>
+                    <li><a class="dropdown-item" href="{% url 'actualizar_empleados' %}">Actualizar Empleados</a></li>
+                    <li><a class="dropdown-item" href="{% url 'borrar_empleados' %}">Borrar Empleados</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    <i class="bi bi-door-closed"></i> Habitaciones
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="{% url 'agregar_habitacion' %}">Agregar Habitación</a></li>
+                    <li><a class="dropdown-item" href="{% url 'ver_habitaciones' %}">Ver Habitación</a></li>
+                    <li><a class="dropdown-item" href="{% url 'actualizar_habitacion' %}">Actualizar Habitación</a></li>
+                    <li><a class="dropdown-item" href="{% url 'borrar_habitacion' %}">Borrar Habitación</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    <i class="bi bi-person-badge"></i> Huéspedes
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="{% url 'agregar_huesped' %}">Agregar Huéspedes</a></li>
+                    <li><a class="dropdown-item" href="{% url 'ver_huespedes' %}">Ver Huéspedes</a></li>
+                    <li><a class="dropdown-item" href="{% url 'actualizar_huesped' %}">Actualizar Huéspedes</a></li>
+                    <li><a class="dropdown-item" href="{% url 'borrar_huesped' %}">Borrar Huéspedes</a></li>
+                </ul>
+            </li>
+            
+            
+        </div>
+    </div>
+</nav>
